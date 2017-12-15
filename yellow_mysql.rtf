@@ -1,0 +1,37 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww9120\viewh8440\viewkind0
+\deftab720
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f0\fs24 \cf0 CREATE DATABASE project;\
+\
+USE project;\
+\
+CREATE TABLE yellow (\
+index_id INT NOT NULL,\
+vendor_id INT NOT NULL,	\
+pickup_date_time VARCHAR(40) NOT NULL,	\
+dropoff_date_time VARCHAR(40) NOT NULL,	\
+passenger_count INT NOT NULL,	\
+trip_distance	 FLOAT NOT NULL,\
+rate_code_id  INT NOT NULL,	\
+store_fwd_flag  VARCHAR(5) NOT NULL,\
+pu_location_id  INT NOT NULL,	\
+do_location_id  INT NOT NULL,	\
+payment_type  INT NOT NULL,	\
+fare_amount  FLOAT NOT NULL,\
+extra FLOAT NOT NULL,	\
+mta_tax FLOAT NOT NULL,	\
+tip_amount FLOAT NOT NULL,	\
+tolls_amount FLOAT NOT NULL,\
+improvement_surcharge FLOAT NOT NULL,	\
+total_amount FLOAT NOT NULL);\
+\
+LOAD DATA LOCAL INFILE \'91/path/to/file/file.csv\'92 INTO TABLE yellow FIELDS TERMINATED BY \'91,\'92;\
+\
+\
+\
+}
