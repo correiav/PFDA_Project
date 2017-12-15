@@ -1,0 +1,7 @@
+#IMPORT TO YELLOW TABLE IN HBASE
+
+bin/sqoop import - -connect jdbc:mysql://127.0.0.13306/project - -username root - -password xxxxx - -m 1 - -table yellow — - columns=“index_id, vendor_id, pickup_date_time, dropoff_date_time, passenger_count, trip_distance, rate_code_id, store_fwd_flag, pu_location_id, do_location_id, payment_type, fare_amount, extra, mta_tax, tip_amount, tolls_amount, improvement_surcharge, total_amount” - -hbase-table yellow - -column family cf1 - - hbase-row-key index_id
+
+#IMPORT TO GREEN TABLE IN HBASE
+
+bin/sqoop import - -connect jdbc:mysql://127.0.0.13306/project - -username root - -password xxxxx - -m 1 - -table green — - columns=“index_id, vendor_id, pickup_date_time, dropoff_date_time, passenger_count, trip_distance, rate_code_id, store_fwd_flag, pu_location_id, do_location_id, payment_type, fare_amount, extra, mta_tax, tip_amount, tolls_amount, improvement_surcharge, total_amount” - -hbase-table green - -column family cf1 - - hbase-row-key index_id
