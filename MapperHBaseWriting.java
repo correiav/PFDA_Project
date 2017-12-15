@@ -15,7 +15,7 @@ public class MapperHBaseWriting extends
 	private Text outPassenger= new Text();
     //private Text outPassengerDate = new Text(); //2
     //private Text outPassengerLocation = new Text(); //3
-    //private Text outPayType = new Text(); //4
+    //private Text outPassengerPayType = new Text(); //4
 	private IntWritable ONE = new IntWritable(1);
 	
 	public void map(ImmutableBytesWritable row, Result columns, Context context)
