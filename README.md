@@ -1,4 +1,4 @@
-# New York Taxi Data - Handling Big Data within Hadoop Ecosystem
+# New York Taxi Data - Handling Big Data in Hadoop Ecosystem
 
 This repo was created to share the codes and txt scripts used to:
 
