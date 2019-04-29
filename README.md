@@ -1,5 +1,4 @@
-# PFDA_Project
-Project Codes
+# New York Taxi Data using MapReduce
 
 This repository was created with the exclusive purpose of publishing the tasks
 which required any sort of coding/script in order to succesfully complete a college project.
